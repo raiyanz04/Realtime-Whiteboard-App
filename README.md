@@ -57,7 +57,7 @@ yarn dev
 ```mermaid
 flowchart LR
     A[User's Browser]:::client --> B[Frontend: React App]:::frontend
-    B --> C[Socket.IO Server (Backend)]:::backend
+    B --> C[Socket.IO Server - Backend]:::backend
     C --> D[Other Connected Clients]:::client
     D --> B
 
@@ -65,6 +65,7 @@ flowchart LR
     classDef frontend fill:#DFF6FF,stroke:#006699,stroke-width:2px;
     classDef backend fill:#FFF0D9,stroke:#CC6600,stroke-width:2px;
 ```
+
 
 How it works:
 
