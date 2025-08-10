@@ -1,7 +1,5 @@
 # 🎨 Realtime Whiteboard App  
 
-![Realtime Whiteboard App Banner](https://via.placeholder.com/1000x250.png?text=Realtime+Whiteboard+App+-+Draw+Together+In+Real+Time)  
-
 Collaborate, sketch, and brainstorm **together in real-time** — powered by **React** and **Socket.IO**.  
 This project allows multiple users to draw on a shared whiteboard and see updates instantly.  
 
@@ -29,39 +27,37 @@ Make sure you have:
 ## 📦 Installation  
 
 1️⃣ **Clone or Download** this repository  
-```bash
+```
 git clone https://github.com/raiyanz04/Realtime-Whiteboard-App.git
+```
+
 2️⃣ Install Backend Dependencies
 
-bash
-Copy
-Edit
+```
 cd backend
 yarn
+```
 3️⃣ Install Frontend Dependencies
+```
 
-bash
-Copy
-Edit
+
 cd ../frontend
 yarn
+```
 🚀 Running the App
 Start Backend Server
-bash
-Copy
-Edit
+```
 cd backend
 yarn start
+```
 Start Frontend Development Server
-bash
-Copy
-Edit
+```
 cd frontend
 yarn dev
+```
 🗺 Architecture Overview
-mermaid
-Copy
-Edit
+```mermaid
+
 flowchart LR
     A[🖥 User's Browser]:::client -- Draws on canvas --> B[🎨 Frontend: React App]:::frontend
     B -- Emits drawing data --> C[⚡ Socket.IO Server (Backend)]:::backend
@@ -71,6 +67,7 @@ flowchart LR
     classDef client fill:#F9F9F9,stroke:#333,stroke-width:1px;
     classDef frontend fill:#DFF6FF,stroke:#006699,stroke-width:2px;
     classDef backend fill:#FFF0D9,stroke:#CC6600,stroke-width:2px;
+```
 How it works:
 
 The user draws on the whiteboard in their browser.
