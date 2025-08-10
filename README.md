@@ -42,7 +42,7 @@ yarn
 cd ../frontend
 yarn
 ```
-🚀 **Running the App**
+## 🚀 **Running the App**
 **Start Backend Server**
 ```
 cd backend
@@ -53,14 +53,14 @@ yarn start
 cd frontend
 yarn dev
 ```
-
-**How it works:**
+---
+## **How it works:**
 - The user draws on the whiteboard in their browser.
 - The frontend sends drawing events via Socket.IO to the backend server.
 - The backend broadcasts these events to all other connected clients.
 - Everyone’s whiteboard updates instantly.
-
-🤝 **Contribution**
+---
+## 🤝 **Contribution**
 Feel free to fork this repo, submit pull requests, or suggest new features.
 We welcome all kinds of contributions — from fixing small bugs to adding big new features.
 If you're not sure where to start, try improving the UI, optimizing performance, or writing documentation.
