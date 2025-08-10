@@ -54,7 +54,7 @@ cd frontend
 yarn dev
 ```
 🗺 Architecture Overview
-```
+```mermaid
 flowchart LR
     A[🖥 User's Browser]:::client -- Draws on canvas --> B[🎨 Frontend: React App]:::frontend
     B -- Emits drawing data --> C[⚡ Socket.IO Server (Backend)]:::backend
