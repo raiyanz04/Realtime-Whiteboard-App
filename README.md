@@ -56,15 +56,16 @@ yarn dev
 🗺 Architecture Overview
 ```mermaid
 flowchart LR
-    A[🖥 User's Browser]:::client -- Draws on canvas --> B[🎨 Frontend: React App]:::frontend
-    B -- Emits drawing data --> C[⚡ Socket.IO Server (Backend)]:::backend
-    C -- Broadcasts updates --> D[🌐 Other Connected Clients]:::client
-    D -- Sends updates back --> B
+    A[User's Browser]:::client --> B[Frontend: React App]:::frontend
+    B --> C[Socket.IO Server (Backend)]:::backend
+    C --> D[Other Connected Clients]:::client
+    D --> B
 
     classDef client fill:#F9F9F9,stroke:#333,stroke-width:1px;
     classDef frontend fill:#DFF6FF,stroke:#006699,stroke-width:2px;
     classDef backend fill:#FFF0D9,stroke:#CC6600,stroke-width:2px;
 ```
+
 How it works:
 
 The user draws on the whiteboard in their browser.
